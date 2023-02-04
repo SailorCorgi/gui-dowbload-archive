@@ -1,2 +1,2 @@
-python 3 - https://www.python.org/downloads/
-pip - py -3 -m ensurepip
+python 3 - https://www.python.org/downloads/ download from here
+pip do "py -3 -m ensurepip" in cmd
