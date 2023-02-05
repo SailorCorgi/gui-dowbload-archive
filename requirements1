@@ -1,2 +1,5 @@
 python 3 - https://www.python.org/downloads/ download from here
 pip do "py -3 -m ensurepip" in cmd
+after that isntall requrements
+pip install requests
+pip install pysimplegui
