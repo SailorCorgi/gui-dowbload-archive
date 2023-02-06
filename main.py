@@ -50,7 +50,6 @@ while True:
                             auto_close_duration=3)
         links = values[0].split(", ")
         folder_name = values[1]
-        folder_path = values[2]
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
         # submit all the download tasks to the thread pool
