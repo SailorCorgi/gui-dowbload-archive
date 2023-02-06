@@ -54,12 +54,14 @@ while True:
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
         # submit all the download tasks to the thread pool
+
         download_tasks = [THREAD_POOL.submit(download_file, link, folder_path, CHUNK_SIZE) for link in links]
         # wait for all the download tasks to complete
         concurrent.futures.wait(download_tasks)
+          sg.popup('Downloads complete')
     if event == sg.WIN_CLOSED or event == 'Close':  # if the user closes window or clicks close
         break
-    if event == 'Check':
+    if event == 'Check': a
         sortedlink = values[0].split(', ')
         sg.popup('Theres the links you have inputted:' + sortedlink)
 
