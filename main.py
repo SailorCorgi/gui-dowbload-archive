@@ -62,7 +62,7 @@ while True:
         break
     if event == 'Check': a
         sortedlink = values[0].split(', ')
-        sg.popup('Theres the links you have inputted:' + sortedlink)
+        sg.popup('Theres the links you have inputted:' + sortedlink + 'And heres the filepath your downloading to' + value[2])
 
 
 window.close()
